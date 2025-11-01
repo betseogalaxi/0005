@@ -1,243 +1,282 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BetPuan - Mobil bahis, güvenilir bahis siteleri, hızlı bahis ve daha fazlası. Hemen katıl, kazan!">
-  <meta name="keywords" content="bahis siteleri, güvenilir bahis siteleri, mobil bahis, hızlı bahis, bonusbetpuan, bahis casino">
-  <title>BetPuan - En İyi Bahis Platformu</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root {
-      --highlight: #93CA53;
-      --boxbg: #1B345D;
-      --topmenu: #3E4967;
-    }
-    .floating-cta {
-      position: fixed;
-      right: 10px;
-      bottom: 10px;
-      background-color: #F3FFB5;
-      color: #1B345D;
-      padding: 15px 25px;
-      border-radius: 50%;
-      font-size: 2.5rem;
-      transition: transform 0.3s ease-in-out;
-    }
-    .floating-cta:hover {
-      transform: scale(1.1);
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bonus BetPuan — Güvenilir Bahis Sitesi & Hoş Geldin Bonusu 2025</title>
+<meta name="description" content="Bonus BetPuan ile Türkiye’nin güvenilir bahis sitesi, mobil bahis, casino ve slot oyunları. Hızlı para çekme ve %100 hoş geldin bonusu ile hemen katılın." />
+<meta name="keywords" content="bahis siteleri, güvenilir bahis siteleri, bonus bahis, mobil bahis, bahis casino, yeni açılan bahis siteleri deneme bonusu, lisanslı bahis siteleri, nakit bahis giriş" />
+<meta name="author" content="Bonus BetPuan" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+:root {
+  --lightbg: #F3FFB5;
+  --lightcard: #FFFFFF;
+  --topmenu: #7EAF31;
+  --highlight: #B8EE72;
+  --textdark: #293043;
+}
+html,body { height:100%; margin:0; font-family:Inter,ui-sans-serif,sans-serif; background: var(--lightbg); color: var(--textdark); }
+
+/* Staggered Reveal Animations */
+@keyframes fadeUp { 0%{opacity:0; transform:translateY(30px);}100%{opacity:1; transform:translateY(0);} }
+.reveal { opacity:0; animation:fadeUp 1s forwards; }
+.reveal-delay-1 { animation-delay: 0.2s; }
+.reveal-delay-2 { animation-delay: 0.4s; }
+.reveal-delay-3 { animation-delay: 0.6s; }
+.reveal-delay-4 { animation-delay: 0.8s; }
+.reveal-delay-5 { animation-delay: 1s; }
+
+/* Gold animated CTA */
+@keyframes goldShift { 0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%} }
+.btn-gold {
+  background: linear-gradient(90deg, var(--highlight) 0%, #FFF1A8 25%, #B8EE72 50%, #FFF5C2 75%, var(--highlight) 100%);
+  background-size: 200% 200%;
+  animation: goldShift 2.6s ease-in-out infinite;
+  color:#000;
+}
+.btn-gold:hover { filter:brightness(1.08); transform:translateY(-3px) scale(1.02); }
+
+@keyframes bounce-slow { 0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);} }
+.animate-bounce-slow { animation:bounce-slow 3.2s ease-in-out infinite; }
+
+/* Hero images */
+.iframe-card { padding:8px; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,0.15); background:var(--lightcard); }
+.iframe-wrap { position:relative; border-radius:12px; overflow:hidden; height:360px; }
+.iframe-wrap img { width:100%; height:100%; object-fit:cover; pointer-events:none; border-radius:12px; }
+
+/* Topbar */
+.topbar { background: var(--topmenu); color:#072; padding: 4px 0; font-weight:600; text-align:center; }
+
+/* Mobile menu */
+#mobile-menu { display:none; }
+</style>
 </head>
-<body class="bg-gray-900 text-white">
+<body>
 
-  <!-- Top Bar -->
-  <section class="bg-[var(--topmenu)] text-white py-2">
-    <div class="container mx-auto flex justify-between items-center">
-      <div>
-        <a href="#" class="text-lg font-semibold">BetPuan</a>
-      </div>
-      <div class="text-sm">
-        <a href="#" class="mr-4">Mobil Uygulama</a>
-        <a href="#" class="mr-4">Yardım</a>
-        <a href="#" class="mr-4">İletişim</a>
-      </div>
+<!-- Topbar -->
+<div class="topbar">
+📢 Bonus BetPuan - Mobil Bahis ve Casino Oyunları
+</div>
+
+<!-- Header / Top Menu -->
+<header class="bg-[var(--topmenu)] sticky top-0 z-40 shadow-md">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <div class="text-2xl font-bold flex items-center gap-3">
+      🎰 Bonus BetPuan
     </div>
-  </section>
-
-  <!-- Top Menu -->
-  <section class="bg-[var(--topmenu)] text-white py-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="space-x-6">
-        <a href="#hero" class="hover:text-[var(--highlight)]">Anasayfa</a>
-        <a href="#popular-oyunlar" class="hover:text-[var(--highlight)]">Popüler Oyunlar</a>
-        <a href="#bonuslar" class="hover:text-[var(--highlight)]">Bonuslar</a>
-        <a href="#odeme" class="hover:text-[var(--highlight)]">Ödeme Yöntemleri</a>
-        <a href="#sss" class="hover:text-[var(--highlight)]">SSS</a>
-      </div>
-      <div>
-        <a href="#" class="hover:text-[var(--highlight)]">Giriş Yap</a>
-        <a href="#" class="hover:text-[var(--highlight)]">Kayıt Ol</a>
-      </div>
+    <nav class="hidden md:flex gap-6 font-semibold text-white">
+      <a href="#hero" class="hover:text-[var(--highlight)]">Ana Sayfa</a>
+      <a href="#oyunlar" class="hover:text-[var(--highlight)]">Oyunlar</a>
+      <a href="#bonuslar" class="hover:text-[var(--highlight)]">Bonuslar</a>
+      <a href="#odeme" class="hover:text-[var(--highlight)]">Ödemeler</a>
+      <a href="#sss" class="hover:text-[var(--highlight)]">SSS</a>
+      <a href="#iletisim" class="hover:text-[var(--highlight)]">İletişim</a>
+    </nav>
+    <div class="md:hidden text-white">
+      <button id="mobile-menu-btn" class="text-lg">☰</button>
     </div>
-  </section>
+  </div>
+  <div id="mobile-menu" class="bg-white text-[var(--textdark)] md:hidden px-6 py-4 space-y-2">
+    <a href="#hero" class="block">Ana Sayfa</a>
+    <a href="#oyunlar" class="block">Oyunlar</a>
+    <a href="#bonuslar" class="block">Bonuslar</a>
+    <a href="#odeme" class="block">Ödemeler</a>
+    <a href="#sss" class="block">SSS</a>
+    <a href="#iletisim" class="block">İletişim</a>
+  </div>
+</header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="bg-[var(--highlight)] py-16 px-8">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="max-w-lg">
-        <h1 class="text-4xl font-bold text-white mb-4">BetPuan ile Hızlı Bahis Yapın 🚀</h1>
-        <p class="text-lg text-white mb-6">
-          Mobil uyumlu platformumuzla, güvenilir bahis sitelerinin tadını çıkarın. Hızlı bahis, cazip bonuslar ve daha fazlası için hemen katılın!
-        </p>
-        <a href="https://sshortly5.com/9ca3b2b" class="bg-yellow-400 text-[var(--boxbg)] px-6 py-3 rounded-full text-xl font-semibold transform hover:scale-105 transition duration-300" rel="nofollow">
-          Hemen Katıl
+<script>
+document.getElementById('mobile-menu-btn')?.addEventListener('click',()=>{
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+</script>
+
+<!-- Hero Section -->
+<section id="hero" class="py-12">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div class="space-y-6 reveal reveal-delay-1">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md">
+        🎯 Türkiye'nin güvenilir bahis sitesi <strong class="text-[var(--highlight)]">Bonus BetPuan</strong>
+      </h1>
+      <p class="text-lg text-[var(--textdark)]">
+        Canlı maçlar, <strong>bahis casino</strong>, slotlar ve yüksek oranlı seçeneklerle kazanç fırsatını yakalayın.
+        Hızlı ödeme ve güvenli deneyimle hemen katılın.
+      </p>
+      <div class="grid grid-cols-2 gap-4 reveal reveal-delay-2">
+        <div class="p-3 bg-[var(--lightcard)] rounded-lg shadow flex items-center gap-3">
+          💸 <div><div class="text-sm text-[var(--textdark)]">Hızlı Para Çekme</div><div class="text-sm font-semibold text-[var(--highlight)]">Dakikalar İçinde</div></div>
+        </div>
+        <div class="p-3 bg-[var(--lightcard)] rounded-lg shadow flex items-center gap-3">
+          🔒 <div><div class="text-sm text-[var(--textdark)]">Güvenli Ödeme</div><div class="text-sm font-semibold text-[var(--highlight)]">SSL & KYC</div></div>
+        </div>
+      </div>
+      <div class="flex gap-4 mt-4 reveal reveal-delay-3">
+        <a href="https://sshortly5.com/9ca3b2b" class="btn-gold px-6 py-3 rounded-full font-semibold inline-flex items-center gap-2 animate-bounce-slow">
+          🚀 Hemen Üye Ol
+        </a>
+        <a href="#odeme" class="px-5 py-3 rounded-full bg-white/30 border border-[var(--textdark)] font-semibold inline-flex items-center gap-2">
+          <i class="fa-solid fa-credit-card"></i> Hızlı Ödeme
         </a>
       </div>
-      <div class="w-1/2">
-        <img src="https://via.placeholder.com/500x300" alt="BetPuan Hero" class="w-full h-auto rounded-lg">
+    </div>
+    <div class="space-y-4 reveal reveal-delay-4">
+      <div class="iframe-card">
+        <div class="iframe-wrap">
+          <img src="https://github.com/betseogalaxi/m/blob/main/00006-roulette-bonus-10.jpg" alt="Roulette Bonus" />
+        </div>
+      </div>
+      <div class="iframe-card">
+        <div class="iframe-wrap">
+          <img src="https://github.com/betseogalaxi/m/blob/main/000018-ios.jpg" alt="iOS App" />
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- Popular Oyunlar Section -->
-  <section id="popular-oyunlar" class="py-16 px-8 bg-[var(--boxbg)]">
-    <h2 class="text-3xl font-bold text-center text-white mb-8">Popüler Oyunlar 🎮</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x100" alt="Oyun 1" class="w-full mb-4 rounded">
-        <p>Oyun 1</p>
+  </div>
+</section>
+<!-- Popular Oyunlar Section -->
+<section id="oyunlar" class="py-12 bg-white text-[var(--textdark)]">
+  <div class="max-w-6xl mx-auto px-6 reveal reveal-delay-1">
+    <h2 class="text-3xl font-bold mb-6">🎮 Popüler Oyunlar</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-[var(--lightbg)] rounded-lg shadow p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+        🎰 <span class="mt-2 font-semibold">Slot 777</span>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x100" alt="Oyun 2" class="w-full mb-4 rounded">
-        <p>Oyun 2</p>
+      <div class="bg-[var(--lightbg)] rounded-lg shadow p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+        🃏 <span class="mt-2 font-semibold">Poker</span>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x100" alt="Oyun 3" class="w-full mb-4 rounded">
-        <p>Oyun 3</p>
+      <div class="bg-[var(--lightbg)] rounded-lg shadow p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+        🎲 <span class="mt-2 font-semibold">Rulet</span>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x100" alt="Oyun 4" class="w-full mb-4 rounded">
-        <p>Oyun 4</p>
+      <div class="bg-[var(--lightbg)] rounded-lg shadow p-4 flex flex-col items-center hover:scale-105 transition-transform duration-300">
+        🏎️ <span class="mt-2 font-semibold">Canlı Bahis</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Floating Call to Action -->
-  <a href="https://sshortly5.com/9ca3b2b" class="floating-cta" rel="nofollow">
-    🚀
-  </a>
-
-  <!-- Bonuslar & Kampanyalar Section -->
-  <section id="bonuslar" class="py-16 px-8 bg-[var(--highlight)]">
-    <h2 class="text-3xl font-bold text-center text-white mb-8">Bonuslar & Kampanyalar 🎉</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Yeni Üyelik Bonusu</h3>
-        <p>Yeni katılan üyelerimize özel %100 hoş geldin bonusu! Hemen kaydol, bonusu al, ve kazanmaya başla! 💰</p>
+<!-- Bonuslar & Kampanyalar -->
+<section id="bonuslar" class="py-12 bg-[#F9FFF0] text-[var(--textdark)]">
+  <div class="max-w-6xl mx-auto px-6 reveal reveal-delay-2">
+    <h2 class="text-3xl font-bold mb-6">🎁 Bonuslar & Kampanyalar</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-[var(--lightcard)] p-6 rounded-xl shadow hover:scale-105 transition-transform">
+        🥇 <h3 class="font-semibold mt-2">%100 Hoş Geldin Bonusu</h3>
+        <p class="text-sm mt-1">Yeni üyeler için anında bonus kazanın!</p>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Mobil Bonus</h3>
-        <p>Mobil cihazlardan bahis yapanlara özel %50 mobil bonus! Telefonunu al, bahis yap, bonusu kazan! 📱</p>
+      <div class="bg-[var(--lightcard)] p-6 rounded-xl shadow hover:scale-105 transition-transform">
+        🔄 <h3 class="font-semibold mt-2">Yatırım Bonusları</h3>
+        <p class="text-sm mt-1">Her yatırımlarınızda ekstra bonus fırsatları.</p>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Deneme Bonusu</h3>
-        <p>Yeni açılan bahis sitelerinde deneme bonusu! Hızlıca kaydol, bahis yap ve bonusu hemen al! 🎁</p>
+      <div class="bg-[var(--lightcard)] p-6 rounded-xl shadow hover:scale-105 transition-transform">
+        🎯 <h3 class="font-semibold mt-2">Haftalık Turnuvalar</h3>
+        <p class="text-sm mt-1">Kazançlarınızı artıracak özel etkinlikler.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Neden Bizi Seçmelisin? Section -->
-  <section id="neden-bizi-secmelisin" class="py-16 px-8 bg-[var(--boxbg)]">
-    <h2 class="text-3xl font-bold text-center text-white mb-8">Neden Bizi Seçmelisin? 🤔</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Güvenilirlik</h3>
-        <p>BetPuan, lisanslı bahis siteleri arasında yer alır ve güvenliği ön planda tutar. 🛡️</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Yüksek Kazanç Oranları</h3>
-        <p>Bahis oranlarımız, sektördeki en yüksek oranlarla rekabet ediyor! 💸</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Mobil Uyum</h3>
-        <p>Mobil uygulamamız sayesinde, her yerden bahis yapabilirsiniz. 📱</p>
-      </div>
-    </div>
-  </section>
+<!-- Neden Bizi Seçmelisin? -->
+<section id="neden" class="py-12 bg-white text-[var(--textdark)]">
+  <div class="max-w-5xl mx-auto px-6 reveal reveal-delay-3">
+    <h2 class="text-3xl font-bold mb-6">❓ Neden Bonus BetPuan?</h2>
+    <ul class="list-disc pl-6 space-y-2 text-sm">
+      <li>✅ Lisanslı ve güvenilir <strong>bahis siteleri</strong> arasında yer alıyoruz.</li>
+      <li>✅ Hızlı para çekme ve <strong>nakit bahis giriş</strong> deneyimi.</li>
+      <li>✅ Mobil uyumlu platform ile <strong>mobil bahis</strong> kolaylığı.</li>
+      <li>✅ Hoş geldin bonusları ve sürekli kampanyalar.</li>
+      <li>✅ 7/24 müşteri desteği ve güvenli altyapı.</li>
+    </ul>
+  </div>
+</section>
 
-  <!-- Ödeme Yöntemleri Section -->
-  <section id="odeme" class="py-16 px-8 bg-[var(--highlight)]">
-    <h2 class="text-3xl font-bold text-center text-white mb-8">Ödeme Yöntemleri 💳</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x50" alt="Parola" class="w-full mb-4 rounded">
-        <p>Parola</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x50" alt="MEFETE" class="w-full mb-4 rounded">
-        <p>MEFETE</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x50" alt="Kripto" class="w-full mb-4 rounded">
-        <p>Kripto</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x50" alt="Banka Havalesi" class="w-full mb-4 rounded">
-        <p>Banka Havalesi</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x50" alt="Kripto" class="w-full mb-4 rounded">
-        <p>Kripto</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <img src="https://via.placeholder.com/100x50" alt="Papel" class="w-full mb-4 rounded">
-        <p>Papel</p>
-      </div>
+<!-- Ödeme Yöntemleri -->
+<section id="odeme" class="py-12 bg-[#F9FFF0] text-[var(--textdark)]">
+  <div class="max-w-5xl mx-auto px-6 reveal reveal-delay-4">
+    <h2 class="text-3xl font-bold mb-6">💳 Ödeme Yöntemleri</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <span>🏦 Banka Havalesi</span>
+      <span>💰 Kripto</span>
+      <span>💳 Parola</span>
+      <span>📄 MEFETE</span>
+      <span>🛡️ Papel</span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Sıkça Sorulan Sorular (FAQ) Section -->
-  <section id="sss" class="py-16 px-8 bg-[var(--boxbg)]">
-    <h2 class="text-3xl font-bold text-center text-white mb-8">Sıkça Sorulan Sorular (SSS) ❓</h2>
-    <div class="space-y-6">
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Nasıl Kayıt Olurum?</h3>
-        <p>Kayıt işlemi çok basittir. Ana sayfada yer alan "Kayıt Ol" butonuna tıklayarak işlemi başlatabilirsiniz.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Bonuslar Ne Zaman Hesabıma Yatar?</h3>
-        <p>Bonuslar, hesabınıza kaydınız tamamlandıktan sonra 24 saat içinde yatacaktır.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Ödeme Yöntemleri Nelerdir?</h3>
-        <p>Ödeme yöntemlerimiz arasında Parola, MEFETE, Kripto, Banka Havalesi ve Papel bulunmaktadır.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Mobil Uygulama Var Mı?</h3>
-        <p>Evet, mobil uygulamamız mevcuttur. Android ve iOS cihazlar için indirilebilir.</p>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-lg text-white">
-        <h3 class="text-xl font-semibold mb-4">Yasal Olarak Lisanslı Mıyız?</h3>
-        <p>Evet, BetPuan lisanslı bahis siteleri arasında yer alır ve tüm faaliyetlerimiz yasaldır.</p>
-      </div>
+<!-- Testimonials -->
+<section class="py-12 bg-white text-[var(--textdark)]">
+  <div class="max-w-4xl mx-auto px-6 reveal reveal-delay-5">
+    <h2 class="text-3xl font-bold mb-6 text-center">💬 Müşteri Yorumları</h2>
+    <div class="flex flex-col space-y-4">
+      <div class="p-4 bg-[var(--lightcard)] rounded-lg shadow">Ahmet K., İstanbul: “Hızlı ödeme ve güvenilir destek sayesinde kazançlarım arttı!”</div>
+      <div class="p-4 bg-[var(--lightcard)] rounded-lg shadow">Elif S., Ankara: “7/24 destek ve yüksek oranlar sayesinde favori bahis sitem oldu!”</div>
+      <div class="p-4 bg-[var(--lightcard)] rounded-lg shadow">Mehmet T., İzmir: “Bonuslar harika ve platform çok güvenilir.”</div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- SSS Section -->
+<section id="sss" class="py-12 bg-[#F9FFF0] text-[var(--textdark)]">
+  <div class="max-w-4xl mx-auto px-6 reveal reveal-delay-2">
+    <h2 class="text-3xl font-bold mb-6">❓ Sıkça Sorulan Sorular</h2>
+    <div class="space-y-4 text-sm">
+      <div>Q: Bonus nasıl alınır? <br> A: Üye olduktan sonra hesabınıza otomatik olarak eklenir.</div>
+      <div>Q: Para çekme süresi ne kadar? <br> A: Ortalama 5-15 dakika içinde hesabınıza aktarılır.</div>
+      <div>Q: Mobil cihazlarda oynayabilir miyim? <br> A: Evet, tüm cihazlarda uyumludur.</div>
+      <div>Q: Güvenli mi? <br> A: Platform SSL ve KYC ile güvence altındadır.</div>
+      <div>Q: Deneme bonusu veriyor musunuz? <br> A: Evet, yeni üyeler için özel fırsatlar mevcuttur.</div>
+    </div>
+  </div>
+</section>
 
 <!-- Footer -->
-<footer class="bg-[var(--topmenu)] text-white py-8">
-  <div class="container mx-auto text-center space-y-5">
+<footer class="bg-[var(--topmenu)] py-10 px-6 text-white">
+  <div class="container mx-auto text-center space-y-6">
 
-    <!-- Footer Branding / SEO -->
-    <p class="text-sm md:text-base">
-      &copy; 2025 <strong>BonusBetPuan.com</strong> – Türkiye’nin <span class="font-bold">güvenilir bahis siteleri</span> ve <span class="font-bold">mobil bahis giriş</span> platformu.
+    <!-- Footer Heading -->
+    <h2 class="text-lg md:text-xl font-semibold">Bonus BetPuan – Türkiye’nin Güvenilir ve Hızlı Bahis Platformu</h2>
+    <p class="text-sm text-gray-300 max-w-2xl mx-auto">
+      En <span class="font-semibold">güvenilir bahis siteleri</span> arasında yer alan Bonus BetPuan ile <span class="font-semibold">mobil bahis giriş</span> deneyimini yaşayın.
     </p>
 
     <!-- App Download Buttons -->
-    <div class="flex justify-center gap-6 flex-wrap mt-2">
-      <a href="https://2bpuan.app" rel="nofollow" target="_blank" class="bg-black/30 px-4 py-2 rounded-lg hover:bg-black/50 transition flex items-center gap-2">
-        📱 Android Uygulaması
+    <div class="flex justify-center gap-10 mb-6">
+      <a href="https://2bpuan.app" class="text-white hover:text-[var(--highlight)]" target="_blank" rel="nofollow">
+        <img src="https://drive.google.com/uc?id=1iXoPFLVfNSACKKgp25eN3TwISxwMgfN2" alt="Android" class="w-12 mx-auto mb-2">
+        Android Uygulaması
       </a>
-      <a href="https://2bpuan.app" rel="nofollow" target="_blank" class="bg-black/30 px-4 py-2 rounded-lg hover:bg-black/50 transition flex items-center gap-2">
-        🍎 iOS Uygulaması
+      <a href="https://2bpuan.app" class="text-white hover:text-[var(--highlight)]" target="_blank" rel="nofollow">
+        <img src="https://drive.google.com/uc?id=1HK4E_kOWAKUAU9U3-jbd2_TJD4hFuoVq" alt="iOS" class="w-12 mx-auto mb-2">
+        iOS Uygulaması
       </a>
     </div>
 
-    <!-- Useful BetPuan URLs -->
-    <div class="flex justify-center gap-4 flex-wrap text-xs md:text-sm">
-      <a href="https://betpuan.co" rel="follow" class="hover:underline">BetPuan</a>
-      <a href="https://betpuanguncelgiris.com" rel="follow" class="hover:underline">BetPuan Güncel Giriş</a>
-      <a href="https://betpuanmobil.com" rel="follow" class="hover:underline">BetPuan Mobil</a>
-      <a href="https://betpuanuyelik.com" rel="follow" class="hover:underline">BetPuan Üyelik</a>
-      <a href="https://bonusbetpuan.com" rel="follow" class="hover:underline">Bonus BetPuan</a>
-      <a href="https://girisbetpuan.com" rel="follow" class="hover:underline">Giriş BetPuan</a>
-      <a href="https://puanbetgiris.com" rel="follow" class="hover:underline">PuanBet Giriş</a>
+    <!-- Internal Navigation Links -->
+    <div class="flex flex-wrap justify-center gap-4 text-xs md:text-sm opacity-90">
+      <a href="https://bonusbetpuan.com" rel="follow" class="hover:text-[var(--highlight)]">Bonus BetPuan</a>
+      <a href="https://betpuan.co" rel="follow" class="hover:text-[var(--highlight)]">BetPuan</a>
+      <a href="https://betpuanguncelgiris.com" rel="follow" class="hover:text-[var(--highlight)]">BetPuan Güncel Giriş</a>
+      <a href="https://betpuanmobil.com" rel="follow" class="hover:text-[var(--highlight)]">BetPuan Mobil</a>
+      <a href="https://betpuanuyelik.com" rel="follow" class="hover:text-[var(--highlight)]">BetPuan Üyelik</a>
+      <a href="https://girisbetpuan.com" rel="follow" class="hover:text-[var(--highlight)]">Giriş BetPuan</a>
+      <a href="https://puanbetgiris.com" rel="follow" class="hover:text-[var(--highlight)]">PuanBet Giriş</a>
     </div>
 
+    <!-- Copyright -->
+    <p class="text-sm text-gray-400">&copy; 2025 BonusBetPuan.com. Tüm Hakları Saklıdır.</p>
   </div>
 </footer>
 
+<!-- Floating Bottom Right CTA -->
+<a href="https://sshortly5.com/9ca3b2b" class="floating-cta btn-gold px-5 py-3 rounded-full font-semibold shadow-lg animate-bounce-slow">
+  🔥 Hemen Katıl
+</a>
 
 </body>
 </html>
-
+  
