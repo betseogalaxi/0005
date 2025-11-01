@@ -99,6 +99,7 @@ document.getElementById('mobile-menu-btn')?.addEventListener('click',()=>{
 <!-- Hero Section -->
 <section id="hero" class="py-12">
   <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <!-- Left Column: Copy and CTAs -->
     <div class="space-y-6 reveal reveal-delay-1">
       <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md">
         🎯 Türkiye'nin güvenilir bahis sitesi <strong class="text-[var(--highlight)]">Bonus BetPuan</strong>
@@ -124,20 +125,22 @@ document.getElementById('mobile-menu-btn')?.addEventListener('click',()=>{
         </a>
       </div>
     </div>
-    <div class="space-y-4 reveal reveal-delay-4">
-      <div class="iframe-card">
-        <div class="iframe-wrap">
-          <img src="https://github.com/betseogalaxi/m/blob/main/00006-roulette-bonus-10.jpg" alt="Roulette Bonus" />
-        </div>
-      </div>
-      <div class="iframe-card">
-        <div class="iframe-wrap">
-          <img src="https://github.com/betseogalaxi/m/blob/main/000018-ios.jpg" alt="iOS App" />
-        </div>
+
+ <!-- Right column: single larger full-height image (no overflow) -->
+    <div class="fade-in">
+      <div class="h-[400px] md:h-[550px] relative">
+        <img 
+          src="https://github.com/betseogalaxi/m/blob/main/000012-heros.jpg?raw=true" 
+          alt="IOS Download" 
+          class="w-full h-full object-contain" 
+          loading="lazy"
+        />
       </div>
     </div>
   </div>
 </section>
+
+  
 <!-- Popular Oyunlar Section -->
 <section id="oyunlar" class="py-12 bg-white text-[var(--textdark)]">
   <div class="max-w-6xl mx-auto px-6 reveal reveal-delay-1">
