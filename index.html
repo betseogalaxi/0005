@@ -141,70 +141,146 @@ document.getElementById('mobile-menu-btn')?.addEventListener('click',()=>{
 </section>
 
 <!-- Popular Oyunlar -->
-<section id="oyunlar" class="py-8">
-  <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-6">🎮 Popular Oyunlar</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<section id="oyunlar" class="py-10 bg-[var(--topmenu)]">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6 text-center text-[#F3FFB5]">🎮 Popüler Oyunlar</h3>
+    <div id="oyunlar-grid" class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-      <div class="bg-[var(--topmenu)] rounded-lg p-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all">
-        <img src="https://github.com/betseogalaxi/m/blob/main/00003-cekim-limit-5mil.jpg?raw=true" rel="nofollow" alt="Çekim Limiti 5M" class="w-full h-28 object-cover rounded-md mb-3" loading="lazy" />
-        <div class="font-semibold text-white">Çekim Limiti 5M</div>
-        <div class="text-xs text-gray-300 mb-2">Yüksek para çekme limiti</div>
-        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" target="_blank" rel="nofollow" class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full hover:bg-yellow-500 transition">🎯 Hemen Oyna</a>
+      <!-- Card 1 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/-000031-fener-vs.jpg?raw=true" rel="nofollow" alt="Fenerbahçe Maçı" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">Fenerbahçe Bahisleri</div>
+        <div class="text-xs text-gray-300 mb-3">Canlı maç oranları</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
       </div>
 
-      <div class="bg-[var(--topmenu)] rounded-lg p-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all">
-        <img src="https://github.com/betseogalaxi/m/blob/main/000023-game-ad.jpg?raw=true" rel="nofollow" alt="Game Ad" class="w-full h-28 object-cover rounded-md mb-3" loading="lazy" />
-        <div class="font-semibold text-white">Game Ad</div>
-        <div class="text-xs text-gray-300 mb-2">Popüler oyun tanıtımları</div>
-        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" target="_blank" rel="nofollow" class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full hover:bg-yellow-500 transition">🎯 Hemen Oyna</a>
+      <!-- Card 2 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000010-500-al.jpg?raw=true" rel="nofollow" alt="500₺ Bonus" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">500₺ Hoşgeldin Bonusu</div>
+        <div class="text-xs text-gray-300 mb-3">Yüksek karşılama fırsatı</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
       </div>
 
-      <div class="bg-[var(--topmenu)] rounded-lg p-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all">
-        <img src="https://github.com/betseogalaxi/m/blob/main/000024-king.jpg?raw=true" rel="nofollow" alt="King Slot" class="w-full h-28 object-cover rounded-md mb-3" loading="lazy" />
-        <div class="font-semibold text-white">King Slot</div>
-        <div class="text-xs text-gray-300 mb-2">Kralın şanslı oyunu</div>
-        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" target="_blank" rel="nofollow" class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full hover:bg-yellow-500 transition">🎯 Hemen Oyna</a>
+      <!-- Card 3 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000011-tebrik.jpg?raw=true" rel="nofollow" alt="Kazanç Tebriği" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">Gerçek Kazananlar</div>
+        <div class="text-xs text-gray-300 mb-3">Tebrik mesajları</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
       </div>
 
-      <div class="bg-[var(--topmenu)] rounded-lg p-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all">
-        <img src="https://github.com/betseogalaxi/m/blob/main/000025-fake-site-alert.jpg?raw=true" rel="nofollow" alt="Fake Site Alert" class="w-full h-28 object-cover rounded-md mb-3" loading="lazy" />
-        <div class="font-semibold text-white">Fake Site Alert</div>
-        <div class="text-xs text-gray-300 mb-2">Güvenli bahis için uyarı</div>
-        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" target="_blank" rel="nofollow" class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full hover:bg-yellow-500 transition">🎯 Hemen Oyna</a>
+      <!-- Card 4 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000012-heros.jpg?raw=true" rel="nofollow" alt="Heroes Slot" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">Heroes Slot</div>
+        <div class="text-xs text-gray-300 mb-3">Büyük jackpot fırsatları</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
       </div>
 
-      <div class="bg-[var(--topmenu)] rounded-lg p-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all">
-        <img src="https://github.com/betseogalaxi/m/blob/main/000026-tebrik.jpg?raw=true" rel="nofollow" alt="Kazanan Tebriği" class="w-full h-28 object-cover rounded-md mb-3" loading="lazy" />
-        <div class="font-semibold text-white">Kazanan Tebriği</div>
-        <div class="text-xs text-gray-300 mb-2">Gerçek kazanan kutlaması</div>
-        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" target="_blank" rel="nofollow" class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full hover:bg-yellow-500 transition">🎯 Hemen Oyna</a>
+      <!-- Card 5 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000012-tekbik.jpg?raw=true" rel="nofollow" alt="Tekbik" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">Tekbik Slot</div>
+        <div class="text-xs text-gray-300 mb-3">Çift kat kazanç şansı</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
       </div>
 
-      <div class="bg-[var(--topmenu)] rounded-lg p-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all">
-        <img src="https://github.com/betseogalaxi/m/blob/main/000027-nice.jpg?raw=true" rel="nofollow" alt="Nice Win" class="w-full h-28 object-cover rounded-md mb-3" loading="lazy" />
-        <div class="font-semibold text-white">Nice Kazanç</div>
-        <div class="text-xs text-gray-300 mb-2">Büyük kazanç ekranı</div>
-        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" target="_blank" rel="nofollow" class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full hover:bg-yellow-500 transition">🎯 Hemen Oyna</a>
+      <!-- Card 6 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000013-ios.jpg?raw=true" rel="nofollow" alt="iOS Slot" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">iOS Slot</div>
+        <div class="text-xs text-gray-300 mb-3">Mobil oyun deneyimi</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
       </div>
 
-      <div class="bg-[var(--topmenu)] rounded-lg p-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all">
-        <img src="https://github.com/betseogalaxi/m/blob/main/000028-vip-siber.jpg?raw=true" rel="nofollow" alt="VIP Siber" class="w-full h-28 object-cover rounded-md mb-3" loading="lazy" />
-        <div class="font-semibold text-white">VIP Siber</div>
-        <div class="text-xs text-gray-300 mb-2">Gizli bahis avantajları</div>
-        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" target="_blank" rel="nofollow" class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full hover:bg-yellow-500 transition">🎯 Hemen Oyna</a>
+      <!-- Card 7 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000014-free-spin.jpg?raw=true" rel="nofollow" alt="Free Spin" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">Free Spin Çılgınlığı</div>
+        <div class="text-xs text-gray-300 mb-3">Çevrim şartı olmadan!</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
       </div>
 
-      <div class="bg-[var(--topmenu)] rounded-lg p-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all">
-        <img src="https://github.com/betseogalaxi/m/blob/main/000029-casino-bonus.jpg?raw=true" rel="nofollow" alt="Casino Bonus" class="w-full h-28 object-cover rounded-md mb-3" loading="lazy" />
-        <div class="font-semibold text-white">Casino Bonus</div>
-        <div class="text-xs text-gray-300 mb-2">Özel casino promosyonları</div>
-        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" target="_blank" rel="nofollow" class="px-3 py-1 text-xs font-bold text-black bg-yellow-400 rounded-full hover:bg-yellow-500 transition">🎯 Hemen Oyna</a>
+      <!-- Card 8 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000015-flamming-hot-oyun.jpg?raw=true" rel="nofollow" alt="Flamming Hot" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">Flamming Hot</div>
+        <div class="text-xs text-gray-300 mb-3">Alev alev kazanç 🔥</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000016-kayip-iade-10.jpg?raw=true" rel="nofollow" alt="10% Kayıp İadesi" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">10% Kayıp İadesi</div>
+        <div class="text-xs text-gray-300 mb-3">Her haftaya özel</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000017x10bin.jpg?raw=true" rel="nofollow" alt="X10 Bin Kat" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">x10.000 Jackpot</div>
+        <div class="text-xs text-gray-300 mb-3">En yüksek oranlı kazanç</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000018-ios.jpg?raw=true" rel="nofollow" alt="iOS Bonus" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">iOS Bonus</div>
+        <div class="text-xs text-gray-300 mb-3">Mobil uygulama hediyesi</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="bg-[#343B4D] rounded-lg p-4 flex flex-col items-center transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#F3FFB5]">
+        <img src="https://github.com/betseogalaxi/m/blob/main/000022-cat-games.jpg?raw=true" rel="nofollow" alt="Cat Games" class="w-full object-contain rounded-md mb-3" loading="lazy" />
+        <div class="font-semibold text-[#B8EE72]">Cat Games</div>
+        <div class="text-xs text-gray-300 mb-3">Eğlenceli slot macerası 🐱</div>
+        <a href="https://sshortly5.com/9ca3b2b" rel="nofollow" class="mt-auto px-3 py-1.5 bg-[#B8EE72] text-[#293043] font-semibold text-xs rounded-md animate-bounce shadow-lg hover:bg-[#F3FFB5] transition">
+          🎯 Hemen Oyna
+        </a>
       </div>
 
     </div>
   </div>
 </section>
+
+<!-- Optional: Shuffle Script -->
+<script>
+  const grid = document.getElementById('oyunlar-grid');
+  const cards = Array.from(grid.children);
+  for (let i = cards.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    grid.appendChild(cards[j]);
+    cards.splice(j,1);
+  }
+</script>
+
 
 <!-- Bonuslar & Kampanyalar -->
 <section id="bonuslar" class="py-12 bg-[#F9FFF0] text-[var(--textdark)]">
@@ -358,8 +434,7 @@ document.getElementById('mobile-menu-btn')?.addEventListener('click',()=>{
     🔥 Hemen Katıl
   </a>
 </footer>
-
-
+  
 </body>
 </html>
   
