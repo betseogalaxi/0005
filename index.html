@@ -63,7 +63,39 @@
     <a href="https://betpuann.net" rel="follow" class="hover:text-yellow-300">BetPuan Güncel</a>
   </div>
 </div>
+<!-- Header / Top Menu -->
+<header class="bg-[var(--topmenu)] sticky top-0 z-40 shadow-md">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <div class="text-2xl font-bold flex items-center gap-3">
+      🎰 Bonus BetPuan
+    </div>
+    <nav class="hidden md:flex gap-6 font-semibold text-white">
+      <a href="#hero" class="hover:text-[var(--highlight)]">Ana Sayfa</a>
+      <a href="#oyunlar" class="hover:text-[var(--highlight)]">Oyunlar</a>
+      <a href="#bonuslar" class="hover:text-[var(--highlight)]">Bonuslar</a>
+      <a href="#odeme" class="hover:text-[var(--highlight)]">Ödemeler</a>
+      <a href="#sss" class="hover:text-[var(--highlight)]">SSS</a>
+      <a href="#iletisim" class="hover:text-[var(--highlight)]">İletişim</a>
+    </nav>
+    <div class="md:hidden text-white">
+      <button id="mobile-menu-btn" class="text-lg">☰</button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="bg-white text-[var(--textdark)] md:hidden px-6 py-4 space-y-2">
+    <a href="#hero" class="block">Ana Sayfa</a>
+    <a href="#oyunlar" class="block">Oyunlar</a>
+    <a href="#bonuslar" class="block">Bonuslar</a>
+    <a href="#odeme" class="block">Ödemeler</a>
+    <a href="#sss" class="block">SSS</a>
+    <a href="#iletisim" class="block">İletişim</a>
+  </div>
+</header>
 
+<script>
+document.getElementById('mobile-menu-btn')?.addEventListener('click',()=>{
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+</script>
   <!-- Marquee with scrolling effect -->
 <section class="py-4 overflow-hidden bg-[#293043]">
   <div class="max-w-6xl mx-auto px-6 relative">
